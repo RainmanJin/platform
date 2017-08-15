@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.icinfo.platform.business.dao.CollegeDao">
+    <resultMap id="BaseResultMap" type="com.icinfo.platform.business.model.College"
+               extends="com.icinfo.platform.business.mapper.CollegeMapper.BaseResultMap">
+    </resultMap>
+
+    <!--查询高校list-->
+    <select id="selectList" parameterType="java.util.List" resultMap="BaseResultMap">
+        SELECT ID, C_AREA_ID, C_NAME, C_ENGLISH_NAME, C_ABBREVIATION, C_SET_UP_DATE, C_PRINCIPAL,
+        C_ADDRESS, C_PROPERTY, C_AREA, C_CREATE_TIME, C_CREATOR, C_OPERATE_TIME, C_OPERATOR FROM college
+        WHERE C_AREA_ID IN
+        <foreach collection="list" index="index" item="item" open="(" close=")" separator=",">
+            #{item}
+        </foreach>
+    </select>
+</mapper>

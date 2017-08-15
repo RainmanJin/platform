@@ -1,0 +1,2 @@
+2017-04-26 09:59:21,787 [main] INFO  com.icinfo.platform.cache.MybatisRedisCache - >>>>>>>>>>>>>>>>>>>>>>>>>> 初始化缓存, id: com.icinfo.platform.business.dao.BaseInfoAreaDao
+2017-04-26 10:00:58,522 [main] INFO  com.icinfo.platform.cache.MybatisRedisCache - >>>>>>>>>>>>>>>>>>>>>>>>>> 初始化缓存, id: com.icinfo.platform.business.dao.BaseInfoAreaDao

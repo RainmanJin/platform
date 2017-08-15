@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.icinfo.platform.image.dao.ImageDao">
+    <resultMap id="BaseResultMap" type="com.icinfo.platform.image.model.Image"
+    extends="com.icinfo.platform.image.mapper.ImageMapper.BaseResultMap">
+    </resultMap>
+
+    <select id="selectList" parameterType="java.util.Map" resultMap="BaseResultMap">
+      SELECT * FROM image
+    </select>
+
+    <select id="selectOne" parameterType="java.lang.String" resultType="java.util.HashMap">
+      SELECT * FROM image where id =#{id}
+    </select>
+</mapper>

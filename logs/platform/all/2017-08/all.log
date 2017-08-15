@@ -1,0 +1,486 @@
+2017-08-15 15:16:31,857 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
+2017-08-15 15:16:31,937 [main] INFO  org.springframework.web.context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Tue Aug 15 15:16:31 CST 2017]; root of context hierarchy
+2017-08-15 15:16:31,962 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [entry/dev/spring-entry.xml]
+2017-08-15 15:16:32,232 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring.xml]
+2017-08-15 15:16:32,625 [main] INFO  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer - Loading properties file from class path resource [entry/dev/spring.properties]
+2017-08-15 15:16:32,626 [main] INFO  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer - Loading properties file from class path resource [entry/dev/oss.properties]
+2017-08-15 15:16:32,632 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-08-15 15:16:37,205 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2017-08-15 15:16:37,246 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-08-15 15:16:37,248 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+2017-08-15 15:16:37,265 [main] INFO  org.springframework.scheduling.quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2017-08-15 15:16:37,269 [main] INFO  org.springframework.scheduling.quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2017-08-15 15:16:37,270 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'ClusterScheduler' with instanceId 'RD4H1OJHK52Y32T1502781397208'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2017-08-15 15:16:37,270 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'ClusterScheduler' initialized from an externally provided properties instance.
+2017-08-15 15:16:37,271 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+2017-08-15 15:16:37,273 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@81bc4da
+2017-08-15 15:16:37,275 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2017-08-15 15:16:37,276 [main] INFO  org.springframework.scheduling.quartz.SchedulerFactoryBean - Will start Quartz Scheduler [ClusterScheduler] in 30 seconds
+2017-08-15 15:16:37,282 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5422 ms
+2017-08-15 15:17:07,278 [Quartz Scheduler [ClusterScheduler]] INFO  org.springframework.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 30 seconds
+2017-08-15 15:17:08,895 [Quartz Scheduler [ClusterScheduler]] INFO  org.springframework.scheduling.quartz.LocalDataSourceJobStore - ClusterManager: detected 1 failed or restarted instances.
+2017-08-15 15:17:08,895 [Quartz Scheduler [ClusterScheduler]] INFO  org.springframework.scheduling.quartz.LocalDataSourceJobStore - ClusterManager: Scanning for instance "RD4H1OJHK52Y32T1501056629319"'s failed in-progress jobs.
+2017-08-15 15:17:09,090 [Quartz Scheduler [ClusterScheduler]] INFO  org.quartz.core.QuartzScheduler - Scheduler ClusterScheduler_$_RD4H1OJHK52Y32T1502781397208 started.
+2017-08-15 15:17:09,876 [QuartzScheduler_ClusterScheduler-RD4H1OJHK52Y32T1502781397208_MisfireHandler] INFO  org.springframework.scheduling.quartz.LocalDataSourceJobStore - Handling the first 1 triggers that missed their scheduled fire-time.  More misfired triggers remain to be processed.
+2017-08-15 15:17:10,508 [QuartzScheduler_ClusterScheduler-RD4H1OJHK52Y32T1502781397208_MisfireHandler] INFO  org.springframework.scheduling.quartz.LocalDataSourceJobStore - Handling 1 trigger(s) that missed their scheduled fire-time.
+2017-08-15 15:17:15,949 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:17:59,961 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:18:00,704 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:18:59,198 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:19:00,157 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:19:59,197 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:20:00,141 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:20:59,123 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:21:00,165 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:21:49,369 [qtp306285887-21] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'spring': initialization started
+2017-08-15 15:21:49,378 [qtp306285887-21] INFO  org.springframework.web.context.support.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Tue Aug 15 15:21:49 CST 2017]; parent: Root WebApplicationContext
+2017-08-15 15:21:49,379 [qtp306285887-21] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mvc.xml]
+2017-08-15 15:21:49,649 [qtp306285887-21] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-08-15 15:21:50,851 [qtp306285887-21] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2017-08-15 15:21:50,910 [qtp306285887-21] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-08-15 15:21:50,950 [qtp306285887-21] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2017-08-15 15:21:50,952 [qtp306285887-21] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/js/lib/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2017-08-15 15:21:50,954 [qtp306285887-21] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2017-08-15 15:21:50,957 [qtp306285887-21] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2017-08-15 15:21:51,249 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/admin/application/tolist],methods=[GET]}" onto public java.lang.String com.icinfo.platform.application.controller.admin.ApplicationController.toList(org.springframework.ui.Model) throws java.lang.Exception
+2017-08-15 15:21:51,250 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/admin/application/toadd],methods=[GET]}" onto public java.lang.String com.icinfo.platform.application.controller.admin.ApplicationController.toAdd() throws java.lang.Exception
+2017-08-15 15:21:51,250 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/admin/application/addoredit],methods=[POST]}" onto public java.lang.String com.icinfo.platform.application.controller.admin.ApplicationController.addOrEdit(com.icinfo.platform.application.model.Application,org.springframework.web.multipart.commons.CommonsMultipartFile) throws java.lang.Exception
+2017-08-15 15:21:51,253 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/client/application/toshowlist],methods=[GET]}" onto public java.lang.String com.icinfo.platform.application.controller.client.ApplicationController.toShowList(org.springframework.ui.Model) throws java.lang.Exception
+2017-08-15 15:21:51,258 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/admin/base/verf],methods=[GET],produces=[application/json]}" onto public com.icinfo.platform.common.bean.AjaxResponse<java.lang.String> com.icinfo.platform.business.controller.admin.BaseInfoController.verf(java.lang.String) throws java.lang.Exception
+2017-08-15 15:21:51,258 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/admin/base/readarealist],methods=[GET],produces=[application/json]}" onto public com.icinfo.platform.common.bean.AjaxResponse<java.util.List<com.icinfo.platform.business.model.BaseInfoArea>> com.icinfo.platform.business.controller.admin.BaseInfoController.readAreaList() throws java.lang.Exception
+2017-08-15 15:21:51,268 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/admin/college/tolist],methods=[GET]}" onto public java.lang.String com.icinfo.platform.business.controller.admin.CollegeController.toList() throws java.lang.Exception
+2017-08-15 15:21:51,269 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/admin/college/toaddoredit],methods=[GET]}" onto public java.lang.String com.icinfo.platform.business.controller.admin.CollegeController.toAddOrEdit() throws java.lang.Exception
+2017-08-15 15:21:51,269 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/admin/college/readlistbycode],methods=[GET]}" onto public com.icinfo.platform.common.bean.AjaxResponse<java.util.List<com.icinfo.platform.business.model.College>> com.icinfo.platform.business.controller.admin.CollegeController.readListByCode(java.lang.String) throws java.lang.Exception
+2017-08-15 15:21:51,271 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/admin/invoke/process],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public com.icinfo.platform.common.bean.AjaxResponse com.icinfo.platform.business.controller.admin.InvokeController.process(java.util.Map<java.lang.String, java.lang.Object>) throws java.lang.Exception
+2017-08-15 15:21:51,272 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/page/{path}/{file}]}" onto public java.lang.String com.icinfo.platform.common.controller.CommonController.page(java.lang.String,java.lang.String)
+2017-08-15 15:21:51,272 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/page/{module}/{path}/{file}]}" onto public java.lang.String com.icinfo.platform.common.controller.CommonController.page(java.lang.String,java.lang.String,java.lang.String)
+2017-08-15 15:21:51,275 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/admin/image/delete/{id}],methods=[POST]}" onto public com.icinfo.platform.common.bean.AjaxResponse<java.lang.Boolean> com.icinfo.platform.image.controller.admin.ImageController.delete(java.lang.String,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2017-08-15 15:21:51,280 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/admin/image/list],methods=[GET]}" onto public java.lang.String com.icinfo.platform.image.controller.admin.ImageController.list(org.springframework.ui.Model) throws java.lang.Exception
+2017-08-15 15:21:51,285 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/admin/image/addoredit],methods=[POST]}" onto public java.lang.String com.icinfo.platform.image.controller.admin.ImageController.addOrEdit(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,com.icinfo.platform.image.model.Image,org.springframework.web.multipart.commons.CommonsMultipartFile,com.icinfo.platform.system.model.User) throws java.lang.Exception
+2017-08-15 15:21:51,286 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/admin/image/toaddoredit],methods=[GET]}" onto public java.lang.String com.icinfo.platform.image.controller.admin.ImageController.toAddOrEdit() throws java.lang.Exception
+2017-08-15 15:21:51,288 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/myschedulejob/delete-schedule-job],methods=[GET]}" onto public java.lang.String com.icinfo.platform.quartz.controller.MyScheduleJobController.deleteScheduleJob(java.lang.Long)
+2017-08-15 15:21:51,289 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/myschedulejob/run-once-schedule-job],methods=[GET]}" onto public java.lang.String com.icinfo.platform.quartz.controller.MyScheduleJobController.runOnceScheduleJob(java.lang.Long)
+2017-08-15 15:21:51,289 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/myschedulejob/resume-schedule-job],methods=[GET]}" onto public java.lang.String com.icinfo.platform.quartz.controller.MyScheduleJobController.resumeScheduleJob(java.lang.Long)
+2017-08-15 15:21:51,289 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/myschedulejob/save-schedule-job],methods=[POST]}" onto public java.lang.String com.icinfo.platform.quartz.controller.MyScheduleJobController.saveScheduleJob(com.icinfo.platform.quartz.dto.MyScheduleJobDto)
+2017-08-15 15:21:51,289 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/myschedulejob/list-schedule-job],methods=[GET]}" onto public java.lang.String com.icinfo.platform.quartz.controller.MyScheduleJobController.listScheduleJob(org.springframework.ui.ModelMap) throws java.lang.Exception
+2017-08-15 15:21:51,289 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/myschedulejob/pause-schedule-job],methods=[GET]}" onto public java.lang.String com.icinfo.platform.quartz.controller.MyScheduleJobController.pauseScheduleJob(java.lang.Long)
+2017-08-15 15:21:51,289 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/myschedulejob/input-schedule-job],methods=[GET]}" onto public java.lang.String com.icinfo.platform.quartz.controller.MyScheduleJobController.inputScheduleJob(com.icinfo.platform.quartz.dto.MyScheduleJobDto,org.springframework.ui.ModelMap) throws java.lang.Exception
+2017-08-15 15:21:51,291 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/schedulejob/delete-schedule-job],methods=[GET]}" onto public java.lang.String com.icinfo.platform.quartz.controller.ScheduleJobController.deleteScheduleJob(java.lang.Long)
+2017-08-15 15:21:51,291 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/schedulejob/run-once-schedule-job],methods=[GET]}" onto public java.lang.String com.icinfo.platform.quartz.controller.ScheduleJobController.runOnceScheduleJob(java.lang.Long)
+2017-08-15 15:21:51,291 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/schedulejob/resume-schedule-job],methods=[GET]}" onto public java.lang.String com.icinfo.platform.quartz.controller.ScheduleJobController.resumeScheduleJob(java.lang.Long)
+2017-08-15 15:21:51,292 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/schedulejob/save-schedule-job],methods=[POST]}" onto public java.lang.String com.icinfo.platform.quartz.controller.ScheduleJobController.saveScheduleJob(com.icinfo.platform.quartz.dto.ScheduleJobDto)
+2017-08-15 15:21:51,292 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/schedulejob/list-schedule-job],methods=[GET]}" onto public java.lang.String com.icinfo.platform.quartz.controller.ScheduleJobController.listScheduleJob(org.springframework.ui.ModelMap) throws java.lang.Exception
+2017-08-15 15:21:51,292 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/schedulejob/pause-schedule-job],methods=[GET]}" onto public java.lang.String com.icinfo.platform.quartz.controller.ScheduleJobController.pauseScheduleJob(java.lang.Long)
+2017-08-15 15:21:51,292 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/schedulejob/input-schedule-job],methods=[GET]}" onto public java.lang.String com.icinfo.platform.quartz.controller.ScheduleJobController.inputScheduleJob(com.icinfo.platform.quartz.dto.ScheduleJobDto,org.springframework.ui.ModelMap) throws java.lang.Exception
+2017-08-15 15:21:51,293 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/client/captcha/generatecode],methods=[GET]}" onto public org.springframework.http.ResponseEntity<byte[]> com.icinfo.platform.system.controller.client.CaptchaController.generateCode(javax.servlet.http.HttpSession) throws java.lang.Exception
+2017-08-15 15:21:51,293 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/client/captcha/checkcode],methods=[GET]}" onto public boolean com.icinfo.platform.system.controller.client.CaptchaController.checkcode(java.lang.String,javax.servlet.http.HttpSession)
+2017-08-15 15:21:51,294 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.icinfo.platform.system.controller.client.IndexController.index() throws java.lang.Exception
+2017-08-15 15:21:51,294 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/home],methods=[GET]}" onto public java.lang.String com.icinfo.platform.system.controller.client.IndexController.home() throws java.lang.Exception
+2017-08-15 15:21:51,294 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/testsend],methods=[GET]}" onto public com.icinfo.platform.common.bean.AjaxResult com.icinfo.platform.system.controller.client.IndexController.testSend() throws java.lang.Exception
+2017-08-15 15:21:51,295 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/client/login],methods=[POST]}" onto public com.icinfo.platform.common.bean.AjaxResponse<java.lang.Boolean> com.icinfo.platform.system.controller.client.LoginController.login(com.icinfo.platform.system.model.User,org.springframework.ui.Model) throws java.lang.Exception
+2017-08-15 15:21:51,295 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/client/toregister],methods=[GET]}" onto public java.lang.String com.icinfo.platform.system.controller.client.LoginController.toRegister() throws java.lang.Exception
+2017-08-15 15:21:51,295 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/client/tologin],methods=[GET]}" onto public java.lang.String com.icinfo.platform.system.controller.client.LoginController.toLogin() throws java.lang.Exception
+2017-08-15 15:21:51,296 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/client/user/save],methods=[POST],produces=[application/json]}" onto public com.icinfo.platform.common.bean.AjaxResponse<java.lang.Boolean> com.icinfo.platform.system.controller.client.UserController.save(com.icinfo.platform.system.model.User) throws java.lang.Exception
+2017-08-15 15:21:51,300 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/core/service],methods=[GET],produces=[application/xml;charset=UTF-8]}" onto public java.lang.String com.icinfo.platform.wechat.core.controller.CoreController.validate(javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2017-08-15 15:21:51,300 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/core/service],methods=[POST],produces=[application/xml;charset=UTF-8]}" onto public java.lang.String com.icinfo.platform.wechat.core.controller.CoreController.processMsg(javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2017-08-15 15:21:54,279 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Tue Aug 15 15:21:49 CST 2017]; parent: Root WebApplicationContext
+2017-08-15 15:21:54,398 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Tue Aug 15 15:21:49 CST 2017]; parent: Root WebApplicationContext
+2017-08-15 15:21:54,529 [qtp306285887-21] INFO  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in controllerExceptionAdvice
+2017-08-15 15:21:54,758 [qtp306285887-21] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'spring': initialization completed in 5389 ms
+2017-08-15 15:21:59,467 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:22:00,416 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:22:59,301 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:23:00,344 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:23:59,128 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:24:12,466 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:24:59,261 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:25:00,213 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:25:59,148 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:26:00,138 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:26:59,197 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:27:00,513 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:27:59,176 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:28:00,150 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:28:59,233 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:29:00,120 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:29:59,806 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:30:01,111 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:31:00,005 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:31:00,917 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:32:00,456 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:32:00,982 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:32:59,171 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:33:00,143 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:33:59,127 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:34:00,101 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:34:59,116 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:35:00,127 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:35:59,170 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:36:00,128 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:36:59,193 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:37:00,116 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:37:59,182 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:38:00,117 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:38:59,116 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:39:00,100 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:39:59,141 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:40:00,140 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:40:59,199 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:41:00,149 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:41:59,164 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:42:00,121 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:42:59,130 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:43:00,112 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:43:59,139 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:44:00,147 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:44:59,185 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:45:00,139 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:45:59,254 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:46:00,171 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:46:59,155 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:47:00,228 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:47:59,212 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:48:00,171 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:48:59,170 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:49:00,104 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:49:59,171 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:50:00,113 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:50:59,144 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:51:00,110 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:51:59,219 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:52:00,120 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:53:00,034 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:53:01,232 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:53:59,842 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:54:00,708 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:54:59,167 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:55:00,321 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:55:59,193 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:56:00,253 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:56:59,153 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:57:00,133 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:57:59,158 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:58:00,274 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:58:59,160 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:59:00,116 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 15:59:59,135 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:00:00,140 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:00:59,223 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:01:00,132 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:01:59,133 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:02:00,097 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:02:59,097 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:03:00,098 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:03:59,656 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:04:00,123 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:04:59,155 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:05:00,208 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:05:59,122 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:06:00,122 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:06:59,191 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:07:00,345 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:07:59,146 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:08:00,129 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:08:59,119 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:09:00,144 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:09:59,187 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:10:00,122 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:10:59,137 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:11:00,085 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:11:59,187 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:12:00,202 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:12:59,260 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:13:00,500 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:13:59,185 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:14:00,118 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:14:59,906 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:15:01,297 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:15:59,175 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:16:00,504 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:17:00,386 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:17:02,221 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:18:01,644 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:18:03,358 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:19:00,744 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:19:04,299 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:19:59,662 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:20:00,637 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:21:04,918 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:21:05,929 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:22:03,924 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:22:05,591 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:23:00,621 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:23:02,987 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:23:59,351 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:24:00,500 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:25:00,318 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:25:02,180 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:25:59,423 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:26:00,273 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:26:59,206 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:27:00,217 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:27:59,527 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:28:00,680 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:28:59,382 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:29:00,130 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:30:02,138 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:30:06,048 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:30:59,718 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:31:01,497 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:31:59,381 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:32:00,154 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:32:59,249 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:33:00,407 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:33:59,179 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:34:00,394 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:34:59,294 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:35:00,214 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:35:59,273 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:36:00,406 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:36:59,558 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:37:03,016 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:37:59,315 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:38:00,291 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:38:59,316 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:39:00,477 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:39:59,398 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:40:00,181 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:40:59,171 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:41:00,185 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:41:59,146 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:42:00,417 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:42:59,149 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:43:00,112 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:43:59,142 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:44:00,228 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:44:59,190 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:45:01,327 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:45:59,276 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:46:00,160 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:46:59,092 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:47:00,219 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:47:59,249 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:48:00,191 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:48:59,251 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:49:00,132 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:49:59,149 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:50:00,148 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:50:59,121 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:51:00,114 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:51:59,155 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:52:00,148 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:52:59,159 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:53:00,158 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:53:59,104 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:54:00,129 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:56:32,298 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:56:32,869 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:56:33,060 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:56:33,252 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:56:59,211 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:57:00,118 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:57:59,136 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:58:00,102 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:58:59,160 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:59:00,127 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 16:59:59,159 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:00:00,153 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:00:59,109 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:01:00,132 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:01:59,147 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:02:00,291 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:02:59,173 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:03:00,199 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:03:59,180 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:04:00,092 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:04:59,190 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:05:00,143 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:05:59,178 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:06:00,221 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:06:59,194 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:07:00,155 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:07:59,149 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:08:00,127 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:08:59,162 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:09:00,151 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:09:59,091 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:10:00,117 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:10:59,413 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:11:00,175 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:11:59,140 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:12:00,116 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:12:59,181 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:13:00,180 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:13:59,097 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:14:00,147 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:14:59,121 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:15:00,137 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:15:59,163 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:16:00,323 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:16:59,145 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:17:00,210 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:18:00,341 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:18:02,250 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:19:00,380 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:19:02,954 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:20:00,334 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:20:02,504 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:20:59,451 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:21:01,144 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:22:05,834 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:22:16,892 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:23:06,128 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:23:10,050 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:24:00,887 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:24:02,379 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:25:00,380 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:25:03,068 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:25:59,682 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:26:00,766 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:26:59,669 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:27:00,962 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:27:59,599 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:28:01,063 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:28:59,489 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:29:00,572 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:30:00,189 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:30:02,458 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:31:07,102 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:31:07,855 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:32:01,117 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:32:02,692 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:32:59,550 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:33:00,276 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:33:59,137 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:34:00,235 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:34:59,244 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:35:00,149 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:35:59,115 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:36:00,161 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:36:59,161 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:37:00,413 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:37:59,162 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:38:00,248 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:38:59,144 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:39:00,102 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:39:59,154 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:40:00,128 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:40:59,136 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:41:00,126 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:41:59,143 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:42:00,136 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:42:59,789 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:43:00,648 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:44:00,129 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:44:03,091 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:44:59,879 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:45:01,498 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:45:59,279 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:46:00,243 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:46:59,115 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:47:00,234 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:47:59,166 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:48:00,181 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:48:59,172 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:49:00,232 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:49:59,286 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:50:00,139 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:50:59,171 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:51:00,138 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:51:59,200 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:52:00,263 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:52:59,204 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:53:00,222 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:53:59,446 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:54:00,127 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:54:59,332 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:55:00,269 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:55:59,344 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:56:00,144 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:58:52,731 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:58:53,156 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:58:53,342 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:58:53,526 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:58:59,123 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:59:00,152 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 17:59:59,150 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:00:00,201 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:00:59,184 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:01:00,252 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:01:59,129 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:02:00,141 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:02:59,191 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:03:00,119 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:03:59,127 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:04:00,158 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:04:59,238 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:05:00,148 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:05:59,168 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:06:00,117 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:06:59,108 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:07:00,141 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:07:59,116 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:08:00,125 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:08:59,089 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:09:00,115 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:09:59,139 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:10:00,105 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:10:59,239 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:11:00,256 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:11:59,129 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:12:00,088 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:12:59,234 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:13:00,338 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:13:59,154 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:14:00,137 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:14:59,120 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:15:00,222 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:15:59,161 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:16:00,220 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:16:59,119 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:17:00,134 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:17:59,135 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:18:00,134 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:18:59,159 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:19:00,124 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:19:59,116 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:20:00,109 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:20:59,150 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:21:00,114 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:21:59,232 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:22:00,084 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:22:59,146 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:23:00,130 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:23:59,156 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:24:00,254 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:24:59,137 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:25:00,120 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:25:59,140 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:26:00,110 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:27:01,819 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:27:03,910 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:28:20,608 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:28:33,974 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:29:00,608 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:29:02,450 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:30:00,148 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:30:04,327 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:30:59,203 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:31:00,127 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:32:03,787 [ClusterScheduler_Worker-20] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:32:04,523 [ClusterScheduler_Worker-2] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:32:59,345 [ClusterScheduler_Worker-4] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:33:00,227 [ClusterScheduler_Worker-6] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:34:00,702 [ClusterScheduler_Worker-8] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:34:04,307 [ClusterScheduler_Worker-10] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:34:59,251 [ClusterScheduler_Worker-12] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:35:00,268 [ClusterScheduler_Worker-14] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:35:59,093 [ClusterScheduler_Worker-16] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute
+2017-08-15 18:36:00,159 [ClusterScheduler_Worker-18] INFO  com.icinfo.platform.quartz.factory.MySyncJobFactory - SyncJobFactory execute

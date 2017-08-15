@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.icinfo.platform.quartz.dao.MyScheduleJobDao">
+    <resultMap id="MyScheduleJobDtoResultMap" type="com.icinfo.platform.quartz.dto.MyScheduleJobDto"
+               extends="com.icinfo.platform.quartz.mapper.MyScheduleJobMapper.BaseResultMap">
+    </resultMap>
+
+    <select id="selectAll" resultMap="MyScheduleJobDtoResultMap">
+      SELECT * FROM MY_SCHEDULE_JOB
+    </select>
+</mapper>

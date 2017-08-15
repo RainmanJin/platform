@@ -1,0 +1,10 @@
+com\icinfo\platform\image\service\ImageServiceTest.class
+com\icinfo\platform\wechat\CustomerService\CustomerServiceManagerTest.class
+com\icinfo\platform\elasticsearch\service\BookServiceTest.class
+com\icinfo\platform\kafka\api\ApiTest.class
+com\icinfo\platform\oss\OssApiTest.class
+com\icinfo\MainTest.class
+com\icinfo\platform\image\controller\ImageControllerTest.class
+com\icinfo\platform\jackson\JacksonTest.class
+com\icinfo\platform\batch\tasklet\SelectTaskletTest.class
+com\icinfo\platform\business\service\CollegeServiceTest.class

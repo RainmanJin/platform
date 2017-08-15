@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.icinfo.platform.system.dao.UserDao">
+    <resultMap id="BaseResultMap" type="com.icinfo.platform.system.model.User"
+               extends="com.icinfo.platform.system.mapper.UserMapper.BaseResultMap">
+    </resultMap>
+
+    <select id="getUser" parameterType="java.util.Map" resultMap="BaseResultMap">
+        select * from user
+        <where>
+            <if test="loginName!=null and loginName != ''">
+                U_LOGIN_NAME = #{loginName,jdbcType=VARCHAR}
+            </if>
+        </where>
+    </select>
+</mapper>

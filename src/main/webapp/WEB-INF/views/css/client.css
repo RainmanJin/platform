@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+}
+.mod-register, .mod-login{
+    margin: 0 auto;
+    width: 400px;
+    height: 100px;
+}
+
+.error{
+    color: #aa0511;
+}

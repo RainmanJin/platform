@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:batch="http://www.springframework.org/schema/batch"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bean="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/batch http://www.springframework.org/schema/batch/spring-batch.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+    <!-- job 启动器 -->
+    <bean id="jobLauncher" class="org.springframework.batch.core.launch.support.SimpleJobLauncher" >
+        <property name="jobRepository" ref="jobRepository"/>
+    </bean>
+
+    <!-- job 仓库 -->
+    <bean id="jobRepository" class="org.springframework.batch.core.repository.support.JobRepositoryFactoryBean">
+        <property name="dataSource" ref="dataSource_business"/>
+        <property name="databaseType" value="MySQL"/>
+        <property name="transactionManager" ref="transactionManager_business"/>
+    </bean>
+    <!-- 读组件 -->
+    <bean id="mztJjhfrzItemReader" class="org.mybatis.spring.batch.MyBatisPagingItemReader" scope="step">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory_temp"/>
+        <property name="queryId" value="com.icinfo.hxpermit.temp.mzt.mzt_jjh.mapper.MztJjhMapper.queryAll"/>
+        <property name="pageSize" value="50"/>
+        <property name="parameterValues" >
+            <map>
+                <entry key="jobStartTime" value="#{jobParameters['jobStartTime']}" />
+                <entry key="jobEndTime" value="#{jobParameters['jobEndTime']}" />
+            </map>
+        </property>
+    </bean>
+
+    <bean id="mztJjhfrzDeleteItemReader" class="org.mybatis.spring.batch.MyBatisPagingItemReader" scope="step">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory_temp"/>
+        <property name="queryId" value="com.icinfo.hxpermit.temp.mzt.mzt_jjh.mapper.MztJjhDeleteMapper.queryAll"/>
+        <property name="pageSize" value="50"/>
+        <property name="parameterValues" >
+            <map>
+                <entry key="jobStartTime" value="#{jobParameters['jobStartTime']}" />
+                <entry key="jobEndTime" value="#{jobParameters['jobEndTime']}" />
+            </map>
+        </property>
+    </bean>
+
+    <!-- 处理组件 -->
+    <bean id="mztJjhfrzItemProcessor" class="com.icinfo.hxpermit.sbatch.mzt.MztJjhfrzGenerateItemProcessor" scope="step">
+        <property name="catalogCode" value="#{jobParameters['catalogCode']}"/>
+    </bean>
+
+    <bean id="mztJjhfrzDeleteItemProcessor" class="com.icinfo.hxpermit.sbatch.mzt.MztJjhfrzDeleteItemProcessor" scope="step">
+        <property name="catalogCode" value="#{jobParameters['catalogCode']}"/>
+    </bean>
+
+    <!-- 调用现有服务进行写 写组件 -->
+    <bean id="mztJjhfrzItemWriter" class="org.springframework.batch.item.adapter.PropertyExtractingDelegatingItemWriter" scope="step">
+        <property name="targetObject" ref="mztJjhfrzServiceImpl"/>
+        <property name="targetMethod" value="doDealMztjjhfrzClean"/>
+        <property name="fieldsUsedAsTargetMethodArguments">
+            <list>
+                <value>mztJjhfrz</value>
+                <value>licInfo</value>
+                <value>holderInfo</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="mztJjhfrzDeleteItemWriter" class="org.springframework.batch.item.adapter.PropertyExtractingDelegatingItemWriter" scope="step">
+        <property name="targetObject" ref="mztJjhfrzDeleteServiceImpl"/>
+        <property name="targetMethod" value="doRemoveMztjjhfrzByClean"/>
+        <property name="fieldsUsedAsTargetMethodArguments">
+            <list>
+                <value>mztJjhfrz</value>
+                <value>licInfo</value>
+                <value>holderInfo</value>
+            </list>
+        </property>
+    </bean>
+
+
+    <!-- job -->
+    <batch:job id="mzt_jjhfrz_generate_job" restartable="true">
+        <!--<batch:step id="mzt_jjhfrz_delete_generate_job_step" next="mzt_jjhfrz_generate_job_step">
+            <batch:tasklet>
+                <batch:chunk reader="mztJjhfrzDeleteItemReader" processor="mztJjhfrzDeleteItemProcessor"
+                             writer="mztJjhfrzDeleteItemWriter" commit-interval="50" skip-limit="5">
+                    <batch:skippable-exception-classes>
+                        <batch:include class="java.lang.Exception"/>
+                    </batch:skippable-exception-classes>
+                </batch:chunk>
+            </batch:tasklet>
+        </batch:step>-->
+        <batch:step id="mzt_jjhfrz_generate_job_step">
+            <batch:tasklet>
+                <batch:chunk reader="mztJjhfrzItemReader" processor="mztJjhfrzItemProcessor"
+                             writer="mztJjhfrzItemWriter" commit-interval="10" skip-limit="5">
+                    <batch:skippable-exception-classes>
+                        <batch:include class="java.lang.Exception"/>
+                    </batch:skippable-exception-classes>
+                </batch:chunk>
+            </batch:tasklet>
+        </batch:step>
+        <!-- 拦截器 -->
+        <batch:listeners>
+            <batch:listener ref="batchCommonListerner" />
+        </batch:listeners>
+    </batch:job>
+
+</beans>

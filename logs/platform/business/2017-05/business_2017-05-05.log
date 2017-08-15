@@ -1,0 +1,16 @@
+2017-05-05 11:09:39,168 [main] INFO  com.icinfo.platform.cache.MybatisRedisCache - >>>>>>>>>>>>>>>>>>>>>>>>>> 初始化缓存, id: com.icinfo.platform.business.dao.BaseInfoAreaDao
+2017-05-05 11:11:16,050 [qtp675889995-19] INFO  com.icinfo.platform.cache.MybatisRedisCache - >>>>>>>>>>>>>>>>>>> 从缓存获取.
+2017-05-05 11:11:17,062 [qtp675889995-19] INFO  com.icinfo.platform.cache.MybatisRedisCache - redis 取值异常: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+2017-05-05 11:11:17,307 [qtp675889995-19] INFO  com.icinfo.platform.cache.MybatisRedisCache - >>>>>>>>>>>>>>>>>>> 存入缓存.
+2017-05-05 11:11:18,349 [qtp675889995-19] INFO  com.icinfo.platform.cache.MybatisRedisCache - >>>>>>>>>>>>>>>>>>> 存入缓存.
+2017-05-05 11:11:19,366 [qtp675889995-19] INFO  com.icinfo.platform.cache.MybatisRedisCache - >>>>>>>>>>>>>>>>>>> 存入缓存.
+2017-05-05 11:11:31,078 [qtp675889995-18] INFO  com.icinfo.platform.cache.MybatisRedisCache - >>>>>>>>>>>>>>>>>>> 从缓存获取.
+2017-05-05 11:11:32,089 [qtp675889995-18] INFO  com.icinfo.platform.cache.MybatisRedisCache - redis 取值异常: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+2017-05-05 11:11:32,173 [qtp675889995-18] INFO  com.icinfo.platform.cache.MybatisRedisCache - >>>>>>>>>>>>>>>>>>> 存入缓存.
+2017-05-05 11:11:33,190 [qtp675889995-18] INFO  com.icinfo.platform.cache.MybatisRedisCache - >>>>>>>>>>>>>>>>>>> 存入缓存.
+2017-05-05 11:11:34,209 [qtp675889995-18] INFO  com.icinfo.platform.cache.MybatisRedisCache - >>>>>>>>>>>>>>>>>>> 存入缓存.
+2017-05-05 11:14:34,590 [main] INFO  com.icinfo.platform.cache.MybatisRedisCache - >>>>>>>>>>>>>>>>>>>>>>>>>> 初始化缓存, id: com.icinfo.platform.business.dao.BaseInfoAreaDao
+2017-05-05 11:15:32,641 [qtp623757508-19] INFO  com.icinfo.platform.cache.MybatisRedisCache - >>>>>>>>>>>>>>>>>>> 从缓存获取.
+2017-05-05 11:15:32,673 [qtp623757508-19] INFO  com.icinfo.platform.cache.MybatisRedisCache - redis 取值异常: null
+2017-05-05 11:15:32,796 [qtp623757508-19] INFO  com.icinfo.platform.cache.MybatisRedisCache - >>>>>>>>>>>>>>>>>>> 存入缓存.
+2017-05-05 11:15:48,818 [qtp623757508-20] INFO  com.icinfo.platform.cache.MybatisRedisCache - >>>>>>>>>>>>>>>>>>> 从缓存获取.

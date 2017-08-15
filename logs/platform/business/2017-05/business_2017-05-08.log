@@ -1,0 +1,6 @@
+2017-05-08 10:15:21,891 [main] INFO  com.icinfo.platform.cache.MybatisRedisCache - >>>>>>>>>>>>>>>>>>>>>>>>>> 初始化缓存, id: com.icinfo.platform.business.dao.BaseInfoAreaDao
+2017-05-08 10:16:28,753 [qtp1665308978-14] INFO  com.icinfo.platform.cache.MybatisRedisCache - >>>>>>>>>>>>>>>>>>> 从缓存获取.
+2017-05-08 10:16:29,777 [qtp1665308978-14] INFO  com.icinfo.platform.cache.MybatisRedisCache - redis 取值异常: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+2017-05-08 10:16:30,037 [qtp1665308978-14] INFO  com.icinfo.platform.cache.MybatisRedisCache - >>>>>>>>>>>>>>>>>>> 存入缓存.
+2017-05-08 10:16:31,078 [qtp1665308978-14] INFO  com.icinfo.platform.cache.MybatisRedisCache - >>>>>>>>>>>>>>>>>>> 存入缓存.
+2017-05-08 10:16:32,094 [qtp1665308978-14] INFO  com.icinfo.platform.cache.MybatisRedisCache - >>>>>>>>>>>>>>>>>>> 存入缓存.

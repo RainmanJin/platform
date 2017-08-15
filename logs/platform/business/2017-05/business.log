@@ -1,0 +1,3 @@
+2017-05-27 16:18:10,617 [qtp447878707-20] INFO  com.icinfo.platform.wechat.core.controller.CoreController - 微信接入成功！
+2017-05-27 16:18:10,790 [qtp447878707-16] INFO  com.icinfo.platform.wechat.core.controller.CoreController - 微信接入成功！
+2017-05-27 17:08:15,097 [qtp650191948-23] ERROR com.icinfo.platform.wechat.core.controller.CoreController - 微信接入失败！
